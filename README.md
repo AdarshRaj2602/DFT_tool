@@ -39,15 +39,18 @@ python main.py
 
 ## 🗂️ Project Structure
 
+```text
 DFT_tool/
 ├── assets/
 │   ├── icons/                  # App icons
 │   └── themes/
 │       └── theme.py            # Colours, fonts, design tokens
 ├── core/
+│   ├── __init__.py
 │   ├── dft.py                  # Pure DFT engine — build_w_matrix, compute_dft
 │   └── fft.py                  # NumPy FFT wrapper
 ├── ui/
+│   ├── __init__.py
 │   ├── app.py                  # Main window, sidebar, navigation router
 │   ├── home_page.py            # Animated home + live DFT preview
 │   ├── input_panel.py          # Signal entry + controls
@@ -56,12 +59,12 @@ DFT_tool/
 │   ├── plot_panel.py           # Spectrum plots
 │   └── about_page.py           # Technical overview
 ├── utils/
+│   ├── __init__.py
 │   └── validators.py           # Signal parsing, file loading
 ├── main.py                     # Entry point
-├── requirements.txt
-└── README.md
-
----
+├── requirements.txt            # Python dependencies
+└── README.md                   # You are here!
+```
 
 ## 🧮 The DFT Formula
 
